@@ -5,9 +5,11 @@ public class FizzBuzz {
         String result = "";
         if (number % 3 == 0) {
             result += "Fizz";
-        } else if (number % 5 == 0) {
+        }
+        if (number % 5 == 0) {
             result += "Buzz";
-        } else if (number % 7 == 0) {
+        }
+        if (number % 7 == 0) {
             result += "Whizz";
         }
         return result.length() == 0 ? String.valueOf(number) : result;
